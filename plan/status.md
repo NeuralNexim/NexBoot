@@ -33,12 +33,12 @@ Status legend: ✅ Complete · 🔀 PR Open · 🔄 In Progress · ⏳ Planned
 | GitHub Actions CI passing (Python 3.10+, pytest, lint) | ⏳ |
 | `examples/nexos/build-manifest.json` present | ✅ |
 | CI passes against a real NexTinyOS artifact bundle | ⏳ |
-| NexTinyOS `docs/developer-manual.md` updated to link NexBoot | ✅ (§3.1 + NexBoot section in NexTinyOS developer-manual.md) |
+| NexTinyOS `docs/developer-manual.md` updated to link NexBoot | ⏳ |
 | `v1.0.0` tag created | ⏳ |
 
 ---
 
 ## Next Task
 
-All implementation deliverables complete. Remaining: CI green (fix integration test
-SHA256 mismatch in `examples/nexos/build-manifest.json`), then tag `v1.0.0`.
+All implementation deliverables complete. Remaining: CI green, update NexTinyOS
+developer manual, tag `v1.0.0`.
