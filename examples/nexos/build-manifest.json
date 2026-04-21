@@ -1,0 +1,51 @@
+{
+  "abi_version": 1,
+  "build": {
+    "git_sha": "efb5e50a502f2283a3470a0acc546b491d9cc830",
+    "build_date": "2026-04-21T19:54:48Z",
+    "build_target": "i386"
+  },
+  "artifacts": {
+    "bootloader.bin": {
+      "size": 512,
+      "sha256": "d0a90aef9fc4e718da204d9d2bae427bc9f6e4795d08cf6b91ecf0d610ffcb8e"
+    },
+    "stage2.bin": {
+      "size": 65024,
+      "sha256": "c39d5db938c8c168187ed906548190812a4033571e12efbab6ba3301d507fb31"
+    },
+    "kernel-stripped.elf": {
+      "size": 276476,
+      "sha256": "113779d8d78025de5bfa9f27bfeb9dd1ebe7c69339c005400b83d67337915f19"
+    },
+    "crc32_patch.py": {
+      "size": 1866,
+      "sha256": "d9761a5784ced1166e3672015136db120dbde3f16d3a00a0b9a10ee122b9ef6b"
+    }
+  },
+  "disk_layout": {
+    "kernel_secs": 540,
+    "nexfs_sb_lba": 704
+  },
+  "patch_offsets": {
+    "image_relative": {
+      "kernel_secs_offset": 506,
+      "nexfs_sb_lba_offset": 512,
+      "stage2_crc32_offset": 65532
+    },
+    "artifact_relative": {
+      "kernel_secs": {
+        "artifact": "bootloader.bin",
+        "offset": 506
+      },
+      "nexfs_sb_lba": {
+        "artifact": "stage2.bin",
+        "offset": 0
+      },
+      "stage2_crc32": {
+        "artifact": "stage2.bin",
+        "offset": 65020
+      }
+    }
+  }
+}
